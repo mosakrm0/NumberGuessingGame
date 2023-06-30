@@ -12,7 +12,7 @@ while True:
 
         if TheGuss > 0 and TheGuss < 101:
          
-            if (TheGuss == OurRandomNumber):
+            if TheGuss == OurRandomNumber:
                 print("")
                 print("Correct !")
                 print("The Number was ", OurRandomNumber , " !")
@@ -21,8 +21,8 @@ while True:
                 print("Lower")
             elif TheGuss < OurRandomNumber :
                 print("Higher")
-            else:
-                print("That Not A Number Between [1 - 100]")
+        else:
+            print("Thats Not A Number Between [1 - 100]")
         
     except ValueError:
         print("This is not a Number")
